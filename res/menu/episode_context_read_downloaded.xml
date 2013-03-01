@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/PlayEpisode"
+          android:title="@string/playEpisode" />
+    <item android:id="@+id/MarkEpisodeUnread"
+          android:title="@string/markUnread" />
+    <item android:id="@+id/DeleteEpisode"
+          android:title="@string/deleteEpisode" />
+</menu>

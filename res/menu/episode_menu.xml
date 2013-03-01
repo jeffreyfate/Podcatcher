@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/EpisodeFilter"
+        android:icon="@drawable/navigation_filter"
+        android:title="@string/updateFeeds"
+        android:showAsAction="always" >
+        <menu>
+            <item
+                android:id="@+id/ToggleRead"
+                android:title="Toggle Read" />
+            <item
+                android:id="@+id/ToggleDownloaded"
+                android:title="Toggle Downloaded" />
+            <item
+                android:id="@+id/SortOrder"
+                android:title="Toggle Order" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/UpdateFeeds"
+        android:icon="@drawable/navigation_update"
+        android:title="@string/updateFeeds"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/AddFeed"
+        android:icon="@drawable/ic_launcher_menu"
+        android:title="Add Feed"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/SettingsMenu"
+        android:icon="@drawable/ic_launcher_menu"
+        android:title="@string/settings"
+        android:showAsAction="never" />
+</menu>

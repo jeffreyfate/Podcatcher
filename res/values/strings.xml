@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Podcatcher</string>
+    <string name="search_feed">Search for a feed</string>
+    
+    <string name="now_playing">Now Playing</string>
+    <string name="downloads">Downloads</string>
+    
+    <string name="pod_settings">podSettings</string>
+    
+    <string name="SyncSummary">Sync podcast feeds with Google Reader</string>
+    <string name="SyncTitle">Sync With Google</string>
+    <string name="sync_key">syncSetting</string>
+    
+    <string name="ControlsSummary">Replace ffwd/rew with skip/back remote controls on lockscreen</string>
+    <string name="ControlsTitle">Switch Remote Controls</string>
+    <string name="controls_key">controlsSetting</string>
+    
+    <string name="UpdateSummary">Update Interval Type</string>
+    <string name="UpdateTitle">Feed Update</string>
+    <string name="update_key">updateSetting</string>
+    
+    <string name="IntervalSummary">How long to wait between feed updates</string>
+    <string name="IntervalTitle">Update Interval</string>
+    <string name="interval_key">intervalSetting</string>
+    
+    <string name="DownloadSummary">Enable auto-download of new episodes</string>
+    <string name="DownloadTitle">Auto-download</string>
+    <string name="download_key">downloadSetting</string>
+    
+    <string name="ArchiveSummary">Don\'t hide old episodes that no longer exist in feeds</string>
+    <string name="ArchiveTitle">Show archived episodes</string>
+    <string name="archive_key">archiveSetting</string>
+    
+    <string name="DownloadsSummary">Show the episodes currently being downloaded</string>
+    <string name="DownloadsTitle">Download queue</string>
+    <string name="downloads_key">downloadsSetting</string>
+    
+    <string name="FinishSummary">Save settings and start Podcatcher</string>
+    <string name="FinishTitle">Finish</string>
+    <string name="finish_key">finishSetting</string>
+    
+    <string name="DownloadWifiSummary">Download episodes only on wifi connection</string>
+    <string name="DownloadWifiTitle">Wifi Download Only</string>
+    <string name="wifi_key">wifiSetting</string>
+    
+    <string name="DownloadPowerSummary">Download episodes only when device powered</string>
+    <string name="DownloadPowerTitle">Power Download Only</string>
+    <string name="power_key">powerSetting</string>
+    
+    <string name="Download4GSummary">Download episodes only on 4G connection</string>
+    <string name="Download4GTitle">4G Download Only</string>
+    <string name="four_g_key">4gSetting</string>
+    
+    <string name="Download3GSummary">Download episodes only on 3G connection</string>
+    <string name="Download3GTitle">3G Download Only</string>
+    <string name="three_g_key">3gSetting</string>
+    
+    <string name="settings">Settings</string>
+    
+    <string name="updateFeeds">Update</string>
+    <string name="markAllRead">Mark All Read</string>
+    <string name="markAllUnread">Mark All Unread</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    
+    <string name="playEpisode">Play</string>
+    <string name="markRead">Mark Read</string>
+    <string name="markUnread">Mark Unread</string>
+    <string name="downloadEpisode">Download</string>
+    <string name="deleteEpisode">Delete</string>
+    <string name="cancelEpisode">Cancel</string>
+    <string name="removeEpisode">Remove</string>
+    <string name="retryEpisode">Retry</string>
+    
+    <string name="firstStart">Setup</string>
+    <string name="account">Select Account</string>
+    
+    <string name="syncText">Syncing with Google Reader enables easy access to feeds across devices and platforms. Subscribe to feeds on your PC and easily access them here.</string>
+    <string name="syncCheck">Enable Google Reader sync</string>
+    <string name="downloadText">New episodes found during update get downloaded automatically</string>
+    <string name="downloadCheck">Auto-download new episodes</string>
+    <string name="updateText">Automatically update feeds on an interval</string>
+    <string name="updateCheck">Enable automatic updates</string>
+    <string name="magicCheck">Enable magic interval</string>
+    <string name="magicText">Magic interval is determined by the frequency of episodes in a feed and only updates around when a new episode usually is published</string>
+    <string name="pickerText">Choose the interval time between updates</string>
+    <string name="adjustButton">Adjust Settings</string>
+    <string name="doneButton">Done</string>
+    
+    <string name="emptyFeeds">No Feeds Yet!\n\nAdd a feed from the menu</string>
+    <string name="emptyFeedsSync">No Feeds Yet!\n\nAdd a feed from the menu\nOR\nAdd feeds at http://google.com/reader then update</string>
+    
+    <string name="emptyEpisodes">No episodes\nShowing</string>
+    <string name="emptyFeedsFiltered">No feeds\nShowing</string>
+    
+    <string name="emptyDownloads">No episodes queued for download</string>
+    
+    <string name="firstStartText">Podcatcher can sync with Google Reader to help keep your favorite feeds up-to-date wherever you go.\n\nYou can set periodic feed updates, schedule them for a time of day or utilize our magic feed update.\n\nMagic update determines about when your feeds will post new episodes and only updates at that time.\n\nAdjust settings to your liking and get started!</string>
+    
+    <string name="blankTime">-:--:--</string>
+    
+    <string name="otherViewDescription">Other View Image</string>
+    <string name="skipButtonDescription">Skip Button</string>
+    <string name="fwdButtonDescription">Fwd Button</string>
+    <string name="rewButtonDescription">Rew Button</string>
+    <string name="playButtonDescription">Play Button</string>
+    <string name="feedImageDescription">Feed Image</string>
+    
+    <string name="editSpeedText">+</string>
+    <string name="speedText">1.0x</string>
+
+</resources>

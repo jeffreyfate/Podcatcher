@@ -1,0 +1,27 @@
+Start Fresh ==	ActivitySplash > onCreate > onResume > 
+                    If sharedPrefs doesn't contain sync_key >
+                        Start ActivityFirstStart for result, request code
+                            Constants.REQUEST_CODE_FIRST_START
+                    Else if sharedPrefs has sync_key == true && sharedPrefs
+                        doesn't contain google_key > Start ActivityAccount for
+                            result, request code 
+                                Constants.REQUEST_CODE_CHOOSE_ACCOUNT
+                    Else
+                        startUpdate
+
+Start Fresh >	Setup Screen appears with 
+                    [Enable Google Reader sync | Auto-download new episodes | 
+                        Enable automatic updates] options unchecked
+				Select [Enable Google Reader sync] > Item is checked
+				Select [Auto-download new episodes] > Item is checked
+				Select [Enable automatic updates] > Item is checked > 
+				    [Enable magic interval] is visible and checked
+				Select [Enable magic interval] > Item is unchecked > 
+				    Update interval spinner is visible > Default value is 1 hr
+				
+addNewFeed | UpdateService | updateFeed > getImage > downloadImage > ACTION_IMAGE_CHANGE > (PodcastAdapter) notifyDataSetChanged
+Download completed > ACTION_NEW_EPISODE > updateData > notifyDataSetChanged
+New episode inserted > ACTION_NEW_EPISODE > updateData > notifyDataSetChanged
+UpdateService > if syncing > mark feed read > ACTION_NEW_EPISODE > updateData > notifyDataSetChanged
+PodcastAdapter > updateEpisodes > TASK_UPDATE_EPISODES > ACTION_NEW_EPISODE > updateData > notifyDataSetChanged
+PodcastAdapter > updateFeeds > TASK_UPDATE_FEEDS > ACTION_NEW_EPISODE > updateData > notifyDataSetChanged

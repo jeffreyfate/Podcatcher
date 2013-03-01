@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jeffthefate.pod_dev"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:targetSdkVersion="16" android:minSdkVersion="9" />
+    
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name="com.jeffthefate.pod_dev.ApplicationEx"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true" >
+        <activity
+            android:name=".activity.ActivityFirstStart"
+            android:label="@string/firstStart"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ActivityAccount"
+            android:label="@string/account"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ActivitySetup"
+            android:label="@string/firstStart"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ActivitySplash"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityThemeNoTitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActivityMain"
+            android:label="@string/app_name"
+            android:uiOptions="none"
+            android:theme="@style/ActivityTheme"
+            android:process=":front" />
+        <activity
+            android:name=".activity.ActivitySearchFeed"
+            android:label="@string/search_feed"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ActivityFeedDetails"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ActivityEpisodeDetails"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityTheme" />
+        <activity
+            android:name=".activity.ActivityPlayback"
+            android:label="@string/now_playing"
+            android:launchMode="singleTask"
+            android:theme="@style/ActivityTheme"
+            android:screenOrientation="portrait"
+            android:process=":front"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.ActivityDownloads"
+            android:theme="@style/ActivityTheme"
+            android:label="@string/downloads"
+            android:process=":download" />
+        <activity
+            android:name=".activity.ActivityPreferences"
+            android:label="@string/app_name" />
+        <service 
+            android:name="com.jeffthefate.pod_dev.service.UpdateService"
+            android:process=":update" />
+        <service 
+            android:name="com.jeffthefate.pod_dev.service.DownloadService"
+            android:process=":download" />
+        <service 
+            android:name="com.jeffthefate.pod_dev.service.PlaybackService"
+            android:process=":front" />
+        <receiver android:name=".receiver.ExternalStorageReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.UsbConnectionReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.ConnectivityReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.MusicIntentReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

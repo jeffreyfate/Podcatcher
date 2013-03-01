@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PlaybackTopLayout"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.jeffthefate.pod_dev.FullScreenImageView
+        android:id="@+id/FeedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transformPivotX="0dip"
+        android:transformPivotY="0dip"
+        android:contentDescription="@string/feedImageDescription"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/ButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true" >
+        <ImageView
+            android:id="@+id/PlayButton"
+            android:layout_width="64dip"
+            android:layout_height="48dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/playButtonDescription"
+            android:src="@drawable/btn_playback_pause_normal_holo_dark"
+            android:background="@drawable/color_btn_context_menu" />
+        <ImageView
+            android:id="@+id/RewButton"
+            android:layout_width="64dip"
+            android:layout_height="48dip"
+            android:layout_toLeftOf="@id/PlayButton"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/rewButtonDescription"
+            android:src="@drawable/btn_playback_rew_normal_holo_dark"
+            android:background="@drawable/color_btn_context_menu" />
+        <ImageView
+            android:id="@+id/FwdButton"
+            android:layout_width="64dip"
+            android:layout_height="48dip"
+            android:layout_toRightOf="@id/PlayButton"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/fwdButtonDescription"
+            android:src="@drawable/btn_playback_ff_normal_holo_dark"
+            android:background="@drawable/color_btn_context_menu" />
+        <RelativeLayout
+            android:id="@+id/SpeedButton"
+            android:layout_height="30dip"
+            android:layout_width="64dip"
+            android:layout_toLeftOf="@id/RewButton"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="4dip" >
+	        <TextView
+	            android:id="@+id/SpeedText"
+	            android:layout_height="match_parent"
+	            android:layout_width="match_parent"
+	            android:layout_centerVertical="true"
+	            android:gravity="center"
+	            android:textSize="16dip"
+	            android:textStyle="bold"
+	            android:textColor="@android:color/black"
+	            android:text="@string/speedText" />
+	        <ProgressBar
+	            android:id="@+id/SpeedProgress"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/SkipButton"
+            android:layout_width="64dip"
+            android:layout_height="48dip"
+            android:layout_toRightOf="@id/FwdButton"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="16dip"
+            android:paddingRight="16dip"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/skipButtonDescription"
+            android:src="@drawable/btn_playback_ff_normal_holo_dark"
+            android:background="@drawable/color_btn_context_menu" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/SpeedList"
+        android:layout_width="64dip"
+        android:layout_height="90dip"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dip"
+        android:layout_above="@id/ButtonsLayout" >
+        <EditText
+            android:id="@+id/AddSpeedEdit"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:inputType="numberDecimal"
+            android:focusable="true"
+            android:cursorVisible="false"
+            android:text="@string/editSpeedText"
+            android:textSize="16dip"
+	        android:textStyle="bold"
+	        android:textColor="@android:color/black"
+	        android:gravity="center"
+	        android:maxLength="4"
+	        android:digits="0123456789."
+	        android:imeOptions="actionDone" />
+	    <RelativeLayout
+	        android:id="@+id/SpeedListLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        <ListView
+	            android:id="@id/android:list"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentBottom="true"
+	            android:dividerHeight="0dip"
+	            android:divider="@android:color/black" />
+	        <TextView
+	            android:id="@id/android:empty"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/MediaSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ButtonsLayout" />
+    <ProgressBar
+        android:id="@+id/MediaProgressBar"
+        style="@style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_above="@id/ButtonsLayout" />
+    <RelativeLayout
+        android:id="@+id/TimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/MediaSeekBar" >
+        <TextView 
+            android:id="@+id/PlayElapsedText"
+            android:textStyle="bold"
+            android:textSize="16dip"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:text="@string/blankTime" />
+        <TextView 
+            android:id="@+id/PlayRemainingText"
+            android:textStyle="bold"
+            android:textSize="16dip"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="@string/blankTime" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/EpisodeDetailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/TimeLayout" >
+        <LinearLayout
+            android:id="@+id/TitleLayout"
+            android:layout_width="150dip"
+            android:layout_height="180dip"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip" >
+	        <TextView 
+	            android:id="@+id/DetailsEpisodeTitle"
+	            android:textStyle="bold"
+	            android:textSize="16dip"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:ellipsize="end" />
+	        <TextView 
+	            android:id="@+id/DetailsFeedTitle"
+	            android:textSize="16dip"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+	            android:ellipsize="end" />
+        </LinearLayout>
+        <TextView 
+            android:id="@+id/DetailsEpisodeDescription"
+            android:textSize="14dip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dip"
+            android:layout_below="@id/TitleLayout"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true" />
+        <ImageView
+            android:id="@+id/OtherViewButtonTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dip"
+            android:paddingTop="5dip"
+            android:paddingLeft="5dip"
+            android:layout_above="@id/DetailsEpisodeDescription"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/otherViewDescription"
+            android:src="@drawable/expander_btn_close_down_normal_holo_dark" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:layout_marginBottom="12dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_above="@id/MediaProgressBar"
+        android:orientation="horizontal" >
+		<LinearLayout
+		    android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1.0" >
+			<TextView
+			    android:id="@+id/EpisodeTitle"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textStyle="bold"
+			    android:textSize="18dip"
+			    android:singleLine="true"
+			    android:scrollHorizontally="true"
+			    android:ellipsize="marquee"
+			    android:marqueeRepeatLimit="marquee_forever"
+			    android:fadingEdge="horizontal" />
+			<TextView
+			    android:id="@+id/FeedTitle"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="14dip"
+			    android:ellipsize="end"
+			    android:singleLine="true" />
+		</LinearLayout>
+		<ImageView
+		    android:id="@+id/OtherViewButtonBottom"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:contentDescription="@string/otherViewDescription"
+		    android:src="@drawable/expander_btn_open_up_normal_holo_dark" />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="BackButton" severity="warning" />
+    <issue id="FieldGetter" severity="warning" />
+    <issue id="IconExpectedSize" severity="warning" />
+    <issue id="NewApi">
+        <ignore path="src\com\jeffthefate\pod_dev\DatabaseHelper.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\PodcastAdapter.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\PodcastExpandableAdapter.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\Util.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedActionBar.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedAnimateDetails.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedAsyncTask.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedExpandGroup.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedGetAuthToken.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedInvalidateOptions.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedNotificationBuilder.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\VersionedView.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\activity\ActivityMain.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\fragment\FragmentPreferences.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\fragment\FragmentSetup.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\service\DownloadService.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\service\UpdateService.java" />
+    </issue>
+    <issue id="TypographyDashes">
+        <ignore path="res\values\strings.xml" />
+    </issue>
+    <issue id="TypographyQuotes" severity="warning" />
+    <issue id="UnusedIds" severity="warning" />
+</lint>

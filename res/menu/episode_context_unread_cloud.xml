@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/MarkEpisodeRead"
+          android:title="@string/markRead" />
+    <item android:id="@+id/DownloadEpisode"
+          android:title="@string/downloadEpisode" />
+</menu>

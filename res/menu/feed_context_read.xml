@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/UpdateFeed"
+          android:title="@string/updateFeeds" />
+    <item android:id="@+id/MarkAllRead"
+          android:title="@string/markAllRead" />
+    <item android:id="@+id/Unsubscribe"
+          android:title="@string/unsubscribe" />
+</menu>

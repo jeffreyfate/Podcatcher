@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/pod_settings">
+    <ListPreference
+        android:summary="@string/UpdateSummary"
+        android:title="@string/UpdateTitle"
+        android:key="@string/update_key"
+        android:entries="@array/displayWordUpdate"
+        android:entryValues="@array/returnValueUpdate"
+        android:defaultValue="0" />
+    <CheckBoxPreference
+        android:summary="@string/DownloadSummary"
+        android:title="@string/DownloadTitle"
+        android:key="@string/download_key"
+        android:defaultValue="false" />
+    <ListPreference
+        android:summary="@string/IntervalSummary"
+        android:title="@string/IntervalTitle"
+        android:key="@string/interval_key"
+        android:entries="@array/displayWordInterval"
+        android:entryValues="@array/returnValueInterval"
+        android:shouldDisableView="true" />
+    <CheckBoxPreference
+        android:summary="@string/SyncSummary"
+        android:title="@string/SyncTitle"
+        android:key="@string/sync_key"
+        android:defaultValue="false" />
+    <CheckBoxPreference
+        android:summary="@string/ArchiveSummary"
+        android:title="@string/ArchiveTitle"
+        android:key="@string/archive_key"
+        android:defaultValue="false" />
+    <Preference
+        android:summary="@string/DownloadsSummary"
+        android:title="@string/DownloadsTitle"
+        android:key="@string/downloads_key" />
+    <CheckBoxPreference
+        android:summary="@string/ControlsSummary"
+        android:title="@string/ControlsTitle"
+        android:key="@string/controls_key"
+        android:defaultValue="false" />
+</PreferenceScreen>

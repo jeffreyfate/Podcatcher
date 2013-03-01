@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/EpisodesTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="24dip"
+        android:background="@android:color/black" >
+	    <TextView 
+	        android:id="@+id/TotalDurationText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:textStyle="bold"
+	        android:layout_marginLeft="5dip"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true" />
+	    <ImageView
+            android:id="@+id/EpisodesDownloadIndicator"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/stat_sys_download_anim0"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="5dip" />
+        <ImageView
+            android:id="@+id/EpisodesCloudIndicator"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_toLeftOf="@id/EpisodesDownloadIndicator"
+            android:src="@drawable/cloud"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip" />
+        <ImageView
+            android:id="@+id/EpisodesReadIndicator"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_toLeftOf="@id/EpisodesCloudIndicator"
+            android:src="@drawable/read"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip" />
+	    <ImageView
+	        android:id="@+id/EpisodesSortIndicator"
+	        android:layout_width="16dip"
+            android:layout_height="16dip"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/sort_up"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip" />
+	    <ImageView
+	        android:id="@+id/BottomBorder"
+	        android:layout_width="match_parent"
+	        android:layout_height="2dip"
+	        android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:drawSelectorOnTop="false"
+        android:fastScrollEnabled="true"
+        android:smoothScrollbar="true"
+        android:layout_weight="1.0" />
+    <RelativeLayout
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/EmptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+        <ProgressBar
+            android:id="@+id/EmptyProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>
