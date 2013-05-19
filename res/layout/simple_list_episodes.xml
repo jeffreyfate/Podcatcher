@@ -4,20 +4,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     <RelativeLayout
-        android:id="@+id/EpisodesTopLayout"
         android:layout_width="match_parent"
         android:layout_height="24dip"
         android:background="@android:color/black" >
 	    <TextView 
-	        android:id="@+id/TotalDurationText"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:textColor="@android:color/white"
-	        android:textStyle="bold"
-	        android:layout_marginLeft="5dip"
-	        android:layout_alignParentLeft="true"
-	        android:layout_centerVertical="true" />
-	    <ImageView
+            android:id="@+id/TotalDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textIsSelectable="false" />
+        <ImageView
             android:id="@+id/EpisodesDownloadIndicator"
             android:layout_width="16dip"
             android:layout_height="16dip"
@@ -25,7 +25,19 @@
             android:src="@drawable/stat_sys_download_anim0"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dip"
-            android:layout_marginRight="5dip" />
+            android:layout_marginRight="5dip"
+            android:contentDescription="@string/downloadImageDescription" />
+        <TextView
+            android:id="@+id/TotalEpisodesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/TotalDurationText"
+            android:layout_toLeftOf="@id/EpisodesDownloadIndicator"
+            android:layout_centerVertical="true"
+            android:textIsSelectable="false" />
         <ImageView
             android:id="@+id/EpisodesCloudIndicator"
             android:layout_width="16dip"
@@ -34,7 +46,8 @@
             android:src="@drawable/cloud"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dip"
-            android:layout_marginRight="2dip" />
+            android:layout_marginRight="2dip"
+            android:contentDescription="@string/cloudImageDescription" />
         <ImageView
             android:id="@+id/EpisodesReadIndicator"
             android:layout_width="16dip"
@@ -43,21 +56,24 @@
             android:src="@drawable/read"
             android:layout_centerVertical="true"
             android:layout_marginLeft="2dip"
-            android:layout_marginRight="2dip" />
-	    <ImageView
-	        android:id="@+id/EpisodesSortIndicator"
-	        android:layout_width="16dip"
+            android:layout_marginRight="2dip"
+            android:contentDescription="@string/readImageDescription" />
+        <ImageView
+            android:id="@+id/EpisodesSortIndicator"
+            android:layout_width="16dip"
             android:layout_height="16dip"
-	        android:layout_centerInParent="true"
-	        android:src="@drawable/sort_up"
-	        android:layout_centerVertical="true"
-	        android:layout_marginLeft="2dip"
-            android:layout_marginRight="2dip" />
-	    <ImageView
-	        android:id="@+id/BottomBorder"
-	        android:layout_width="match_parent"
-	        android:layout_height="2dip"
-	        android:layout_alignParentBottom="true" />
+            android:layout_centerInParent="true"
+            android:src="@drawable/sort_up"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:contentDescription="@string/sortImageDescription" />
+        <ImageView
+            android:id="@+id/BottomBorder"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/borderImageDescription" />
     </RelativeLayout>
     <ListView
         android:id="@android:id/list"
@@ -77,7 +93,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textIsSelectable="false" />
         <ProgressBar
             android:id="@+id/EmptyProgress"
             android:layout_width="wrap_content"

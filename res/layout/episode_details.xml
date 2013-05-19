@@ -12,7 +12,7 @@
 	        android:id="@+id/FeedImage"
 	        android:layout_width="135dip"
 	        android:layout_height="135dip"
-	        android:contentDescription="Feed Image"
+	        android:contentDescription="@string/feedImageDescription"
 	        android:src="@drawable/ic_album_loading" />
 	    <LinearLayout
 		    android:layout_width="match_parent"
@@ -24,15 +24,17 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:textStyle="bold"
-		        android:textSize="22dip"
+		        android:textSize="22sp"
 		        android:ellipsize="end"
-		        android:lines="4" />
+		        android:lines="4"
+		        android:textIsSelectable="true" />
 		    <TextView
                 android:id="@+id/EpisodeDuration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14dip"
-                android:singleLine="true" />
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textIsSelectable="true" />
 		    </LinearLayout>
     </LinearLayout>
     <TextView
@@ -41,6 +43,7 @@
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         android:layout_margin="5dip"
-        android:textSize="18dip"
-        android:layout_below="@id/EpisodeDetailsTop" />
+        android:textSize="18sp"
+        android:layout_below="@id/EpisodeDetailsTop"
+        android:textIsSelectable="true" />
 </RelativeLayout>

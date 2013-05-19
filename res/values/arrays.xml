@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string-array name="displayWordUpdate">
         <item>Manual</item>
         <item>Set Interval</item>
@@ -27,5 +27,103 @@
         <item>360</item>
         <item>720</item>
         <item>1440</item>
+    </string-array>
+    <string-array name="displayWordPresses">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="returnValuePresses">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="displayWordSpeed">
+        <item>Fastest</item>
+        <item>Fast</item>
+        <item>Normal</item>
+        <item>Slow</item>
+        <item>Slowest</item>
+    </string-array>
+    <string-array name="returnValueSpeed">
+        <item>200</item>
+        <item>400</item>
+        <item>600</item>
+        <item>800</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="displayWordNight">
+        <item>Disabled</item>
+        <item>Dark</item>
+        <item>Darker</item>
+        <item>Darkest</item>
+    </string-array>
+    <string-array name="returnValueNight">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="displayWordSensitivity">
+        <item>2 (Sitting flat)</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6 (Walking)</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10 (Running)</item>
+    </string-array>
+    <string-array name="returnValueSensitivity">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="displayWordHeadphone">
+        <item>None</item>
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+    </string-array>
+    <string-array name="returnValueHeadphone">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="displayWordNotification">
+        <item>Do Nothing</item>
+        <item>Pause</item>
+        <item>Lower Volume</item>
+    </string-array>
+    <string-array name="returnValueNotification">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="displayWordSeconds">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="returnValueSeconds">
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
     </string-array>
 </resources>

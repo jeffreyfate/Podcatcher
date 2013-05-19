@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:summary="@string/GlobalTapSummary"
+        android:title="@string/GlobalTapTitle"
+        android:key="@string/tap_key"
+        android:defaultValue="false" />
+    <ListPreference
+        android:key="@string/tapsensitivity_key"
+        android:title="@string/TapSensitivityTitle"
+        android:summary="@string/TapSensitivitySummary"
+        android:entries="@array/displayWordSensitivity"
+        android:entryValues="@array/returnValueSensitivity"
+        android:defaultValue="4"
+        android:dependency="@string/tap_key" />
+    <ListPreference
+        android:key="@string/playpausetap_key"
+        android:title="@string/PlayPauseTapTitle"
+        android:summary="@string/PlayPauseTapSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="1"
+        android:dependency="@string/tap_key" />
+    <ListPreference
+        android:key="@string/backwardtap_key"
+        android:title="@string/BackwardTapTitle"
+        android:summary="@string/BackwardTapSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="2"
+        android:dependency="@string/tap_key" />
+    <ListPreference
+        android:key="@string/forwardtap_key"
+        android:title="@string/ForwardTapTitle"
+        android:summary="@string/ForwardTapSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="3"
+        android:dependency="@string/tap_key" />
+</PreferenceScreen>

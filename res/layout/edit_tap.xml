@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<CheckedTextView
+        android:id="@+id/SensitivityCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dip"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:checked="false"
+        android:text="@string/edit_tap_sensitivity"
+        android:checkMark="@drawable/btn_check_holo_dark" />
+	<CheckedTextView
+        android:id="@+id/TapCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dip"
+        android:layout_above="@id/SensitivityCheck"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:checked="false"
+        android:text="@string/enable_tap_remote"
+        android:checkMark="@drawable/btn_check_holo_dark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/TapCheck"
+        android:layout_margin="20dip"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/TapSummary"
+        android:gravity="center" />
+	<TextView
+        android:id="@+id/TapText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SensitivityCheck"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textIsSelectable="false" />
+	<SeekBar
+        android:id="@+id/SensitivityBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_below="@id/TapText"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:max="8" />
+	<Button
+        android:id="@+id/TapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doneButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SensitivityBar" />
+</RelativeLayout>

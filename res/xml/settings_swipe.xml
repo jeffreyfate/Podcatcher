@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:summary="@string/GlobalSwipeSummary"
+        android:title="@string/GlobalSwipeTitle"
+        android:key="@string/swipe_key"
+        android:defaultValue="false" />
+    <ListPreference
+        android:key="@string/playpauseswipe_key"
+        android:title="@string/PlayPauseSwipeTitle"
+        android:summary="@string/PlayPauseSwipeSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="1"
+        android:dependency="@string/swipe_key" />
+    <ListPreference
+        android:key="@string/backwardswipe_key"
+        android:title="@string/BackwardSwipeTitle"
+        android:summary="@string/BackwardSwipeSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="2"
+        android:dependency="@string/swipe_key" />
+    <ListPreference
+        android:key="@string/forwardswipe_key"
+        android:title="@string/ForwardSwipeTitle"
+        android:summary="@string/ForwardSwipeSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="3"
+        android:dependency="@string/swipe_key" />
+</PreferenceScreen>

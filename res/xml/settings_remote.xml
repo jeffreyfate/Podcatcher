@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:summary="@string/GlobalRemoteSummary"
+        android:title="@string/GlobalRemoteTitle"
+        android:key="@string/remote_key"
+        android:defaultValue="false" />
+    <ListPreference
+        android:key="@string/remotespeed_key"
+        android:title="@string/RemoteSpeedTitle"
+        android:summary="@string/RemoteSpeedSummary"
+        android:entries="@array/displayWordSpeed"
+        android:entryValues="@array/returnValueSpeed"
+        android:defaultValue="600"
+        android:dependency="@string/remote_key" />
+    <ListPreference
+        android:key="@string/playpausepress_key"
+        android:title="@string/PlayPausePressTitle"
+        android:summary="@string/PlayPausePressSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="1"
+        android:dependency="@string/remote_key" />
+    <ListPreference
+        android:key="@string/backwardpress_key"
+        android:title="@string/BackwardPressTitle"
+        android:summary="@string/BackwardPressSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="2"
+        android:dependency="@string/remote_key" />
+    <ListPreference
+        android:key="@string/forwardpress_key"
+        android:title="@string/ForwardPressTitle"
+        android:summary="@string/ForwardPressSummary"
+        android:entries="@array/displayWordPresses"
+        android:entryValues="@array/returnValuePresses"
+        android:defaultValue="3"
+        android:dependency="@string/remote_key" />
+</PreferenceScreen>

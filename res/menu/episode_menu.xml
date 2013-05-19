@@ -5,17 +5,17 @@
         android:id="@+id/EpisodeFilter"
         android:icon="@drawable/navigation_filter"
         android:title="@string/updateFeeds"
-        android:showAsAction="always" >
+        android:showAsAction="ifRoom" >
         <menu>
             <item
                 android:id="@+id/ToggleRead"
-                android:title="Toggle Read" />
+                android:title="@string/toggle_read" />
             <item
                 android:id="@+id/ToggleDownloaded"
-                android:title="Toggle Downloaded" />
+                android:title="@string/toggle_downloaded" />
             <item
                 android:id="@+id/SortOrder"
-                android:title="Toggle Order" />
+                android:title="@string/toggle_order" />
         </menu>
     </item>
     <item
@@ -24,13 +24,15 @@
         android:title="@string/updateFeeds"
         android:showAsAction="always" />
     <item
+        android:id="@+id/MultiSelect"
+        android:title="@string/multiple_select"
+        android:showAsAction="never" />
+    <item
         android:id="@+id/AddFeed"
-        android:icon="@drawable/ic_launcher_menu"
-        android:title="Add Feed"
+        android:title="@string/add_feed"
         android:showAsAction="never" />
     <item
         android:id="@+id/SettingsMenu"
-        android:icon="@drawable/ic_launcher_menu"
         android:title="@string/settings"
         android:showAsAction="never" />
 </menu>

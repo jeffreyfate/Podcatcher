@@ -1,113 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Podcatcher</string>
-    <string name="search_feed">Search for a feed</string>
+    <string name="app_name" translatable="false">Podcatcher (In Progress)</string>
+    <string name="search_feed" translatable="false">Search for a feed</string>
+    <string name="search_button" translatable="false">Search</string>
+    <string name="search_entry" translatable="false">Enter name or address</string>
+    <string name="first_start_title" translatable="false">Welcome to Podcatcher</string>
+    <string name="now_playing" translatable="false">Now Playing</string>
+    <string name="downloads" translatable="false">Downloads</string>
+    <string name="pod_settings" translatable="false">podSettings</string>
+    <string name="remote_settings" translatable="false">remoteSettings</string>
+    <string name="tap_settings" translatable="false">tapSettings</string>
+    <string name="swipe_settings" translatable="false">swipeSettings</string>
+    <string name="SyncSummary" translatable="false">Sync podcast feeds with Google Reader</string>
+    <string name="SyncTitle" translatable="false">Sync With Google</string>
+    <string name="sync_key" translatable="false">syncSetting</string>
+    <string name="ControlsSummary" translatable="false">Replace ffwd/rew with skip/back remote controls</string>
+    <string name="ControlsTitle" translatable="false">Switch Remote Controls</string>
+    <string name="controls_key" translatable="false">controlsSetting</string>
+    <string name="UpdateSummary" translatable="false">Update Interval Type</string>
+    <string name="UpdateTitle" translatable="false">Feed Update</string>
+    <string name="update_key" translatable="false">updateSetting</string>
+    <string name="IntervalSummary" translatable="false">How long to wait between feed updates</string>
+    <string name="IntervalTitle" translatable="false">Update Interval</string>
+    <string name="interval_key" translatable="false">intervalSetting</string>
+    <string name="DownloadSummary" translatable="false">Enable auto-download of new episodes</string>
+    <string name="DownloadTitle" translatable="false">Auto-download</string>
+    <string name="download_key" translatable="false">downloadSetting</string>
+    <string name="ArchiveSummary" translatable="false">Don\'t hide old episodes that no longer exist in feeds</string>
+    <string name="ArchiveTitle" translatable="false">Show archived episodes</string>
+    <string name="archive_key" translatable="false">archiveSetting</string>
+    <string name="DownloadsSummary" translatable="false">Show the episodes currently being downloaded</string>
+    <string name="DownloadsTitle" translatable="false">Download queue</string>
+    <string name="downloads_key" translatable="false">downloadsSetting</string>
+    <string name="FinishSummary" translatable="false">Save settings and start Podcatcher</string>
+    <string name="FinishTitle" translatable="false">Finish</string>
+    <string name="finish_key" translatable="false">finishSetting</string>
+    <string name="DownloadWifiSummary" translatable="false">Automatically download episodes only on wifi connection</string>
+    <string name="DownloadWifiTitle" translatable="false">Wifi Download Only</string>
+    <string name="wifi_key" translatable="false">wifiSetting</string>
+    <string name="DownloadPowerSummary" translatable="false">Automatically download episodes only when device powered</string>
+    <string name="DownloadPowerTitle" translatable="false">Power Download Only</string>
+    <string name="power_key" translatable="false">powerSetting</string>
+    <string name="Download4GSummary" translatable="false">Automatically download episodes only on 4G connection</string>
+    <string name="Download4GTitle" translatable="false">4G Download Only</string>
+    <string name="four_g_key" translatable="false">4gSetting</string>
+    <string name="VideoSummary" translatable="false">Download video only on wifi connection</string>
+    <string name="VideoTitle" translatable="false">Video Download Wifi Only</string>
+    <string name="video_key" translatable="false">videoSetting</string>
+    <string name="NightSummary" translatable="false">Automatically dim screen at night</string>
+    <string name="NightTitle" translatable="false">Night mode</string>
+    <string name="night_key" translatable="false">nightSetting</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="remote_key" translatable="false">remoteKey</string>
+    <string name="tap_key" translatable="false">tapKey</string>
+    <string name="swipe_key" translatable="false">swipeKey</string>
+    <!-- 
+    <string name="playpause_key" translatable="false">playpauseSetting</string>
+    <string name="backward_key" translatable="false">backwardSetting</string>
+    <string name="forward_key" translatable="false">forwardSetting</string>
+     -->
+    <string name="RemoteTitle" translatable="false">Headset Remote</string>
+    <string name="RemoteSummary" translatable="false">Single button headset remote settings</string>
+    <string name="TapTitle" translatable="false">Tap Remote</string>
+    <string name="TapSummary" translatable="false">Tap remote settings</string>
+    <string name="SwipeTitle" translatable="false">Swipe Remote</string>
+    <string name="SwipeSummary" translatable="false">Swipe remote settings</string>
+    <string name="GlobalRemoteTitle" translatable="false">Single Button Remote</string>
+    <string name="GlobalRemoteSummary" translatable="false">Toggle one button remote settings</string>
+    <string name="GlobalTapTitle" translatable="false">Tap Remote</string>
+    <string name="GlobalTapSummary" translatable="false">Toggle tap remote settings</string>
+    <string name="edit_tap_sensitivity" translatable="false">Edit Tap Sensitivity</string>
+    <string name="enable_tap_remote" translatable="false">Enable Tap Remote</string>
+    <string name="enable_swipe_remote" translatable="false">Enable Swipe Remote</string>
+    <string name="GlobalSwipeTitle" translatable="false">Swipe Remote</string>
+    <string name="GlobalSwipeSummary" translatable="false">Toggle swipe remote settings</string>
+    <!-- 
+    <string name="PlayPauseTitle" translatable="false">Play/Pause</string>
+    <string name="BackwardTitle" translatable="false">Backward</string>
+    <string name="ForwardTitle" translatable="false">Forward</string>
+     -->
+    <string name="remotespeed_key" translatable="false">remotespeedSetting</string>
+    <string name="playpausepress_key" translatable="false">playpausepressSetting</string>
+    <string name="backwardpress_key" translatable="false">backwardpressSetting</string>
+    <string name="forwardpress_key" translatable="false">forwardpressSetting</string>
+    <string name="RemoteSpeedTitle" translatable="false">Press speed</string>
+    <string name="RemoteSpeedSummary" translatable="false">Quickness of presses that register remote actions</string>
+    <string name="PlayPausePressTitle" translatable="false">Play/Pause</string>
+    <string name="PlayPausePressSummary" translatable="false">Number of presses to indicate play/pause</string>
+    <string name="BackwardPressTitle" translatable="false">Rewind</string>
+    <string name="BackwardPressSummary" translatable="false">Number of presses to indicate rewind</string>
+    <string name="ForwardPressTitle" translatable="false">Fast Forward</string>
+    <string name="ForwardPressSummary" translatable="false">Number of presses to indicate fast forward</string>
+    <string name="tapsensitivity_key" translatable="false">tapsensitivitySetting</string>
+    <string name="playpausetap_key" translatable="false">playpausetapSetting</string>
+    <string name="backwardtap_key" translatable="false">backwardtapSetting</string>
+    <string name="forwardtap_key" translatable="false">forwardtapSetting</string>
+    <string name="TapSensitivityTitle" translatable="false">Tap Sensitivity</string>
+    <string name="TapSensitivitySummary" translatable="false">Higher number requires harder tap</string>
+    <string name="PlayPauseTapTitle" translatable="false">Play/Pause</string>
+    <string name="PlayPauseTapSummary" translatable="false">Number of taps to indicate play/pause</string>
+    <string name="BackwardTapTitle" translatable="false">Rewind</string>
+    <string name="BackwardTapSummary" translatable="false">Number of taps to indicate rewind</string>
+    <string name="ForwardTapTitle" translatable="false">Fast Forward</string>
+    <string name="ForwardTapSummary" translatable="false">Number of taps to indicate fast forward</string>
+    <string name="playpauseswipe_key" translatable="false">playpauseswipeSetting</string>
+    <string name="backwardswipe_key" translatable="false">backwardswipeSetting</string>
+    <string name="forwardswipe_key" translatable="false">forwardswipeSetting</string>
+    <string name="PlayPauseSwipeTitle" translatable="false">Play/Pause</string>
+    <string name="PlayPauseSwipeSummary" translatable="false">Number of swipes to indicate play/pause</string>
+    <string name="BackwardSwipeTitle" translatable="false">Rewind</string>
+    <string name="BackwardSwipeSummary" translatable="false">Number of swipes to indicate rewind</string>
+    <string name="ForwardSwipeTitle" translatable="false">Fast Forward</string>
+    <string name="ForwardSwipeSummary" translatable="false">Number of swipes to indicate fast forward</string>
+    <string name="updateFeeds" translatable="false">Update</string>
+    <string name="forceUpdateFeeds" translatable="false">Force Update</string>
+    <string name="markAllRead" translatable="false">Mark All Read</string>
+    <string name="markAllUnread" translatable="false">Mark All Unread</string>
+    <string name="unsubscribe" translatable="false">Unsubscribe</string>
+    <string name="subscribe" translatable="false">Subscribe</string>
+    <string name="playEpisode" translatable="false">Play</string>
+    <string name="markRead" translatable="false">Mark Read</string>
+    <string name="markUnread" translatable="false">Mark Unread</string>
+    <string name="downloadEpisode" translatable="false">Download</string>
+    <string name="deleteEpisode" translatable="false">Delete</string>
+    <string name="cancelEpisode" translatable="false">Cancel</string>
+    <string name="removeEpisode" translatable="false">Remove</string>
+    <string name="retryEpisode" translatable="false">Retry</string>
+    <string name="firstStart" translatable="false">Setup</string>
+    <!-- 
+    <string name="account" translatable="false">Select Account</string>
+    <string name="syncText" translatable="false">Syncing with Google Reader enables easy access to feeds across devices and platforms. Subscribe to feeds on your PC and easily access them here.</string>
+    <string name="syncCheck" translatable="false">Enable Google Reader sync</string>
+    <string name="downloadText" translatable="false">New episodes found during update get downloaded automatically</string>
+    <string name="downloadCheck" translatable="false">Auto-download new episodes</string>
+    <string name="updateText" translatable="false">Automatically update feeds on an interval</string>
+    <string name="updateCheck" translatable="false">Enable automatic updates</string>
+    <string name="magicCheck" translatable="false">Enable magic interval</string>
+    <string name="magicText" translatable="false">Magic interval is determined by the frequency of episodes in a feed and only updates around when a new episode usually is published</string>
+    <string name="pickerText" translatable="false">Choose the interval time between updates</string>
+     -->
+    <string name="adjustButton" translatable="false">Adjust Settings</string>
+    <string name="doneButton" translatable="false">Done</string>
+    <string name="emptyFeeds" translatable="false">No Feeds Yet!\n\nAdd a feed from the menu</string>
+    <string name="emptyFeedsSync" translatable="false">No Feeds Yet!\n\nAdd a feed from the menu\nOR\nAdd feeds at http://google.com/reader then update</string>
+    <string name="emptyEpisodes" translatable="false">No episodes\nShowing</string>
+    <string name="emptyFeedsFiltered" translatable="false">No feeds\nShowing</string>
+    <string name="emptyDownloads" translatable="false">No episodes queued for download</string>
+    <string name="firstStartText" translatable="false">Podcatcher can sync with Google Reader to help keep your favorite feeds up-to-date wherever you go.\n\nYou can set periodic feed updates, schedule them for a time of day or use Magic update.\n\nMagic update guesses when your feeds will post new episodes and only updates at that time.\n\nAdjust settings to your liking and get started!</string>
+    <string name="blankTime" translatable="false">-:--:--</string>
+    <string name="otherViewDescription" translatable="false">Other View Image</string>
+    <string name="skipButtonDescription" translatable="false">Skip Button</string>
+    <string name="fwdButtonDescription" translatable="false">Fwd Button</string>
+    <string name="rewButtonDescription" translatable="false">Rew Button</string>
+    <string name="playButtonDescription" translatable="false">Play Button</string>
+    <string name="feedImageDescription" translatable="false">Feed Image</string>
+    <string name="buttonImageDescription" translatable="false">Button Image</string>
+    <string name="downloadImageDescription" translatable="false">Download Image</string>
+    <string name="cloudImageDescription" translatable="false">Cloud Image</string>
+    <string name="readImageDescription" translatable="false">Read Image</string>
+    <string name="lockImageDescription" translatable="false">Lock Image</string>
+    <string name="sortImageDescription" translatable="false">Sort Image</string>
+    <string name="borderImageDescription" translatable="false">Header Border</string>
+    <string name="playingLeftImageDescription" translatable="false">Playing Left Image</string>
+    <string name="playingRightImageDescription" translatable="false">Playing Right Image</string>
+    <string name="detailsMoreImageDescription" translatable="false">More Details</string>
+    <string name="controlsBorderImageDescription" translatable="false">Playback Controls Border</string>
+    <string name="playbackArtImageDescription" translatable="false">Playback Art</string>
+    <string name="editSpeedText" translatable="false">+</string>
+    <string name="speedText" translatable="false">1.0x</string>
+    <string name="loadingmore" translatable="false">Loading more</string>
+    <string name="nightmode_key" translatable="false">nightmodeSetting</string>
+    <string name="NightModeTitle" translatable="false">Night Mode</string>
+    <string name="NightModeSummary" translatable="false">Night mode setting</string>
+    <!-- 
+    <string name="UpdateCheck" translatable="false">Periodic updating</string>
+     -->
+    <string name="Manual" translatable="false">Manual</string>
+    <string name="Interval" translatable="false">Interval</string>
+    <string name="Magic" translatable="false">Magic</string>
+    <string name="episodeDetails" translatable="false">More Info</string>
+    <!-- 
+    <string name="ok" translatable="false">OK</string>
+     -->
+    <string name="cancelDownloads" translatable="false">Cancel All</string>
+    <string name="lock" translatable="false">Lock</string>
+    <string name="delete" translatable="false">Delete</string>
+    <string name="off" translatable="false">Off</string>
+    <string name="dark" translatable="false">Dark</string>
+    <string name="darker" translatable="false">Darker</string>
+    <string name="darkest" translatable="false">Darkest</string>
+    <string name="AccountTitle" translatable="false">Select account</string>
+    <string name="add_feed" translatable="false">Add Feed</string>
+    <string name="multiple_select" translatable="false">Multiple Select</string>
+    <string name="toggle_read" translatable="false">Toggle Read</string>
+    <string name="toggle_downloaded" translatable="false">Toggle Downloaded</string>
+    <string name="toggle_order" translatable="false">Toggle Order</string>
+    <string name="toggle_orderby" translatable="false">Toggle Order By</string>
+    <string name="error_details" translatable="false">Error getting episodes\nTap to retry</string>
+    <string name="tweak_settings" translatable="false">tweakSettingsKey</string>
+    <string name="TweakTitle" translatable="false">Tweak Settings</string>
+    <string name="TweakSummary" translatable="false">Granular settings to tweak your experience</string>
+    <string name="UpdateGroupTitle" translatable="false">Feed Updating</string>
+    <string name="updategroup_key" translatable="false">updateGroupSetting</string>
+    <string name="DownloadGroupTitle" translatable="false">Downloading</string>
+    <string name="downloadgroup_key" translatable="false">downloadGroupSetting</string>
+    <string name="RemoteGroupTitle" translatable="false">Remotes</string>
+    <string name="remotegroup_key" translatable="false">remoteGroupSetting</string>
+    <string name="OtherGroupTitle" translatable="false">Other</string>
+    <string name="othergroup_key" translatable="false">otherGroupSetting</string>
+    <string name="headphonegroup_key" translatable="false">headphoneGroupSetting</string>
+    <string name="HeadphoneGroupTitle" translatable="false">Headphones</string>
+    <string name="headphone_key" translatable="false">headphoneSetting</string>
+    <string name="HeadphoneTitle" translatable="false">Headphone Stop Playback</string>
+    <string name="HeadphoneSummary" translatable="false">Stop playing when headphone is pulled or disconnected</string>
+    <string name="headphonerewind_key" translatable="false">headphoneRewindSetting</string>
+    <string name="HeadphoneRewindTitle" translatable="false">Headphone Pull Rewind Time</string>
+    <string name="HeadphoneRewindSummary" translatable="false">Rewind current episode this much when headphones are pulled</string>
+    <string name="notification_key" translatable="false">notificationSetting</string>
+    <string name="NotificationTitle" translatable="false">Notification Behavior</string>
+    <string name="NotificationSummary" translatable="false">Pause, lower volume or do nothing when a notification sound is heard</string>
+    <string name="advancedgroup_key" translatable="false">advancedGroupSetting</string>
+    <string name="AdvancedGroupTitle" translatable="false">Advanced</string>
+    <string name="tweaks_key" translatable="false">tweakSetting</string>
+    <string name="TweaksTitle" translatable="false">Enable Tweaks</string>
+    <string name="TweaksSummary" translatable="false">Add more advanced options, including force update to fix updating issues</string>
+    <string name="pipe" translatable="false">|</string>
+    <string name="FfwdTitle" translatable="false">Fast Forward Seconds</string>
+    <string name="FfwdSummary" translatable="false">Number of seconds to fast forward</string>
+    <string name="ffwdsecs_key" translatable="false">ffwdsecsSetting</string>
+    <string name="RewTitle" translatable="false">Rewind Seconds</string>
+    <string name="RewSummary" translatable="false">Number of seconds to rewind</string>
+    <string name="rewsecs_key" translatable="false">rewsecsSetting</string>
     
-    <string name="now_playing">Now Playing</string>
-    <string name="downloads">Downloads</string>
-    
-    <string name="pod_settings">podSettings</string>
-    
-    <string name="SyncSummary">Sync podcast feeds with Google Reader</string>
-    <string name="SyncTitle">Sync With Google</string>
-    <string name="sync_key">syncSetting</string>
-    
-    <string name="ControlsSummary">Replace ffwd/rew with skip/back remote controls on lockscreen</string>
-    <string name="ControlsTitle">Switch Remote Controls</string>
-    <string name="controls_key">controlsSetting</string>
-    
-    <string name="UpdateSummary">Update Interval Type</string>
-    <string name="UpdateTitle">Feed Update</string>
-    <string name="update_key">updateSetting</string>
-    
-    <string name="IntervalSummary">How long to wait between feed updates</string>
-    <string name="IntervalTitle">Update Interval</string>
-    <string name="interval_key">intervalSetting</string>
-    
-    <string name="DownloadSummary">Enable auto-download of new episodes</string>
-    <string name="DownloadTitle">Auto-download</string>
-    <string name="download_key">downloadSetting</string>
-    
-    <string name="ArchiveSummary">Don\'t hide old episodes that no longer exist in feeds</string>
-    <string name="ArchiveTitle">Show archived episodes</string>
-    <string name="archive_key">archiveSetting</string>
-    
-    <string name="DownloadsSummary">Show the episodes currently being downloaded</string>
-    <string name="DownloadsTitle">Download queue</string>
-    <string name="downloads_key">downloadsSetting</string>
-    
-    <string name="FinishSummary">Save settings and start Podcatcher</string>
-    <string name="FinishTitle">Finish</string>
-    <string name="finish_key">finishSetting</string>
-    
-    <string name="DownloadWifiSummary">Download episodes only on wifi connection</string>
-    <string name="DownloadWifiTitle">Wifi Download Only</string>
-    <string name="wifi_key">wifiSetting</string>
-    
-    <string name="DownloadPowerSummary">Download episodes only when device powered</string>
-    <string name="DownloadPowerTitle">Power Download Only</string>
-    <string name="power_key">powerSetting</string>
-    
-    <string name="Download4GSummary">Download episodes only on 4G connection</string>
-    <string name="Download4GTitle">4G Download Only</string>
-    <string name="four_g_key">4gSetting</string>
-    
-    <string name="Download3GSummary">Download episodes only on 3G connection</string>
-    <string name="Download3GTitle">3G Download Only</string>
-    <string name="three_g_key">3gSetting</string>
-    
-    <string name="settings">Settings</string>
-    
-    <string name="updateFeeds">Update</string>
-    <string name="markAllRead">Mark All Read</string>
-    <string name="markAllUnread">Mark All Unread</string>
-    <string name="unsubscribe">Unsubscribe</string>
-    
-    <string name="playEpisode">Play</string>
-    <string name="markRead">Mark Read</string>
-    <string name="markUnread">Mark Unread</string>
-    <string name="downloadEpisode">Download</string>
-    <string name="deleteEpisode">Delete</string>
-    <string name="cancelEpisode">Cancel</string>
-    <string name="removeEpisode">Remove</string>
-    <string name="retryEpisode">Retry</string>
-    
-    <string name="firstStart">Setup</string>
-    <string name="account">Select Account</string>
-    
-    <string name="syncText">Syncing with Google Reader enables easy access to feeds across devices and platforms. Subscribe to feeds on your PC and easily access them here.</string>
-    <string name="syncCheck">Enable Google Reader sync</string>
-    <string name="downloadText">New episodes found during update get downloaded automatically</string>
-    <string name="downloadCheck">Auto-download new episodes</string>
-    <string name="updateText">Automatically update feeds on an interval</string>
-    <string name="updateCheck">Enable automatic updates</string>
-    <string name="magicCheck">Enable magic interval</string>
-    <string name="magicText">Magic interval is determined by the frequency of episodes in a feed and only updates around when a new episode usually is published</string>
-    <string name="pickerText">Choose the interval time between updates</string>
-    <string name="adjustButton">Adjust Settings</string>
-    <string name="doneButton">Done</string>
-    
-    <string name="emptyFeeds">No Feeds Yet!\n\nAdd a feed from the menu</string>
-    <string name="emptyFeedsSync">No Feeds Yet!\n\nAdd a feed from the menu\nOR\nAdd feeds at http://google.com/reader then update</string>
-    
-    <string name="emptyEpisodes">No episodes\nShowing</string>
-    <string name="emptyFeedsFiltered">No feeds\nShowing</string>
-    
-    <string name="emptyDownloads">No episodes queued for download</string>
-    
-    <string name="firstStartText">Podcatcher can sync with Google Reader to help keep your favorite feeds up-to-date wherever you go.\n\nYou can set periodic feed updates, schedule them for a time of day or utilize our magic feed update.\n\nMagic update determines about when your feeds will post new episodes and only updates at that time.\n\nAdjust settings to your liking and get started!</string>
-    
-    <string name="blankTime">-:--:--</string>
-    
-    <string name="otherViewDescription">Other View Image</string>
-    <string name="skipButtonDescription">Skip Button</string>
-    <string name="fwdButtonDescription">Fwd Button</string>
-    <string name="rewButtonDescription">Rew Button</string>
-    <string name="playButtonDescription">Play Button</string>
-    <string name="feedImageDescription">Feed Image</string>
-    
-    <string name="editSpeedText">+</string>
-    <string name="speedText">1.0x</string>
-
 </resources>

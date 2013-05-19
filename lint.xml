@@ -3,6 +3,13 @@
     <issue id="BackButton" severity="warning" />
     <issue id="FieldGetter" severity="warning" />
     <issue id="IconExpectedSize" severity="warning" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="MissingRegistered">
+        <ignore path="res\layout\main.xml" />
+    </issue>
+    <issue id="MissingTranslation">
+        <ignore path="res\values\strings.xml" />
+    </issue>
     <issue id="NewApi">
         <ignore path="src\com\jeffthefate\pod_dev\DatabaseHelper.java" />
         <ignore path="src\com\jeffthefate\pod_dev\PodcastAdapter.java" />
@@ -20,6 +27,7 @@
         <ignore path="src\com\jeffthefate\pod_dev\fragment\FragmentPreferences.java" />
         <ignore path="src\com\jeffthefate\pod_dev\fragment\FragmentSetup.java" />
         <ignore path="src\com\jeffthefate\pod_dev\service\DownloadService.java" />
+        <ignore path="src\com\jeffthefate\pod_dev\service\PlaybackService.java" />
         <ignore path="src\com\jeffthefate\pod_dev\service\UpdateService.java" />
     </issue>
     <issue id="TypographyDashes">

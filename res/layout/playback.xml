@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/PlaybackTopLayout"
-    android:background="@android:color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    <com.jeffthefate.pod_dev.FullScreenImageView
+    <com.jeffthefate.podcatcher.FullScreenImageView
         android:id="@+id/FeedImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -73,7 +71,7 @@
 	            android:layout_width="match_parent"
 	            android:layout_centerVertical="true"
 	            android:gravity="center"
-	            android:textSize="16dip"
+	            android:textSize="16sp"
 	            android:textStyle="bold"
 	            android:textColor="@android:color/black"
 	            android:text="@string/speedText" />
@@ -113,7 +111,7 @@
             android:focusable="true"
             android:cursorVisible="false"
             android:text="@string/editSpeedText"
-            android:textSize="16dip"
+            android:textSize="16sp"
 	        android:textStyle="bold"
 	        android:textColor="@android:color/black"
 	        android:gravity="center"
@@ -121,7 +119,6 @@
 	        android:digits="0123456789."
 	        android:imeOptions="actionDone" />
 	    <RelativeLayout
-	        android:id="@+id/SpeedListLayout"
 	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content" >
 	        <ListView
@@ -135,7 +132,8 @@
 	            android:id="@id/android:empty"
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
-	            android:layout_centerInParent="true" />
+	            android:layout_centerInParent="true"
+	            android:textIsSelectable="false" />
         </RelativeLayout>
     </LinearLayout>
     <SeekBar
@@ -159,7 +157,7 @@
         <TextView 
             android:id="@+id/PlayElapsedText"
             android:textStyle="bold"
-            android:textSize="16dip"
+            android:textSize="16sp"
             android:layout_width="60dip"
             android:layout_height="wrap_content"
             android:layout_margin="15dip"
@@ -169,7 +167,7 @@
         <TextView 
             android:id="@+id/PlayRemainingText"
             android:textStyle="bold"
-            android:textSize="16dip"
+            android:textSize="16sp"
             android:layout_width="60dip"
             android:layout_height="wrap_content"
             android:layout_margin="15dip"
@@ -181,7 +179,6 @@
         android:id="@+id/EpisodeDetailsLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_above="@id/TimeLayout" >
         <LinearLayout
             android:id="@+id/TitleLayout"
@@ -196,28 +193,31 @@
 	        <TextView 
 	            android:id="@+id/DetailsEpisodeTitle"
 	            android:textStyle="bold"
-	            android:textSize="16dip"
+	            android:textSize="16sp"
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_gravity="right"
-	            android:ellipsize="end" />
+	            android:ellipsize="end"
+	            android:textIsSelectable="false" />
 	        <TextView 
 	            android:id="@+id/DetailsFeedTitle"
-	            android:textSize="16dip"
+	            android:textSize="16sp"
 	            android:layout_width="match_parent"
 	            android:layout_height="wrap_content"
 	            android:layout_gravity="right"
-	            android:ellipsize="end" />
+	            android:ellipsize="end"
+	            android:textIsSelectable="false" />
         </LinearLayout>
         <TextView 
             android:id="@+id/DetailsEpisodeDescription"
-            android:textSize="14dip"
+            android:textSize="14sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="15dip"
             android:layout_below="@id/TitleLayout"
             android:scrollbars="vertical"
-            android:scrollbarAlwaysDrawVerticalTrack="true" />
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textIsSelectable="false" />
         <ImageView
             android:id="@+id/OtherViewButtonTop"
             android:layout_width="wrap_content"
@@ -231,6 +231,16 @@
             android:contentDescription="@string/otherViewDescription"
             android:src="@drawable/expander_btn_close_down_normal_holo_dark" />
     </RelativeLayout>
+    <ImageView
+        android:id="@+id/DetailsEpisodeDescriptionMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-12dip"
+        android:layout_below="@id/EpisodeDetailsLayout"
+        android:src="@drawable/sort_down"
+        android:visibility="invisible"
+        android:contentDescription="@string/detailsMoreImageDescription" />
     <LinearLayout
         android:id="@+id/ProgressLayout"
         android:layout_width="match_parent"
@@ -251,19 +261,21 @@
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:textStyle="bold"
-			    android:textSize="18dip"
+			    android:textSize="18sp"
 			    android:singleLine="true"
 			    android:scrollHorizontally="true"
 			    android:ellipsize="marquee"
 			    android:marqueeRepeatLimit="marquee_forever"
-			    android:fadingEdge="horizontal" />
+			    android:fadingEdge="horizontal"
+			    android:textIsSelectable="false" />
 			<TextView
 			    android:id="@+id/FeedTitle"
 			    android:layout_width="match_parent"
 			    android:layout_height="wrap_content"
-			    android:textSize="14dip"
+			    android:textSize="14sp"
 			    android:ellipsize="end"
-			    android:singleLine="true" />
+			    android:singleLine="true"
+			    android:textIsSelectable="false" />
 		</LinearLayout>
 		<ImageView
 		    android:id="@+id/OtherViewButtonBottom"

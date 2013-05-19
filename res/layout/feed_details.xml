@@ -12,7 +12,7 @@
 	        android:id="@+id/FeedImage"
 	        android:layout_width="135dip"
 	        android:layout_height="135dip"
-	        android:contentDescription="Feed Image"
+	        android:contentDescription="@string/feedImageDescription"
 	        android:src="@drawable/ic_album_loading"
 	        android:visibility="invisible" />
 	    <LinearLayout
@@ -25,28 +25,32 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:textStyle="bold"
-		        android:textSize="18dip"
+		        android:textSize="18sp"
 		        android:ellipsize="end"
-		        android:singleLine="true" />
+		        android:singleLine="true"
+		        android:textIsSelectable="true" />
 		    <TextView
 		        android:id="@+id/FeedAuthor"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:textSize="14dip"
+		        android:textSize="14sp"
 		        android:ellipsize="end"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textIsSelectable="true" />
 		    <TextView
 		        android:id="@+id/FeedDescription"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:ellipsize="end"
-		        android:lines="4" />
+		        android:lines="4"
+		        android:textIsSelectable="true" />
 		    <TextView
                 android:id="@+id/FeedEpisodeNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12dip"
-                android:singleLine="true" />
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:textIsSelectable="true" />
 		    </LinearLayout>
     </LinearLayout>
     <Button
@@ -56,9 +60,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
-        android:text="Subscribe" />
+        android:text="@string/subscribe" />
     <RelativeLayout
-        android:id="@+id/RelativeEpisodes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/FeedSubscribeButton"
@@ -80,6 +83,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Error getting episodes\nTap to retry"
+        android:text="@string/error_details"
         android:visibility="invisible" />
 </RelativeLayout>

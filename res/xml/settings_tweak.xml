@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/HeadphoneGroupTitle"
+        android:key="@string/headphonegroup_key" >
+        <CheckBoxPreference
+	        android:summary="@string/HeadphoneSummary"
+	        android:title="@string/HeadphoneTitle"
+	        android:key="@string/headphone_key"
+	        android:defaultValue="true" />
+        <ListPreference
+	        android:key="@string/headphonerewind_key"
+	        android:title="@string/HeadphoneRewindTitle"
+	        android:summary="@string/HeadphoneRewindSummary"
+	        android:entries="@array/displayWordHeadphone"
+	        android:entryValues="@array/returnValueHeadphone"
+	        android:defaultValue="1"
+	        android:dependency="@string/headphone_key" />
+        <ListPreference
+            android:key="@string/notification_key"
+            android:title="@string/NotificationTitle"
+            android:summary="@string/NotificationSummary"
+            android:entries="@array/displayWordNotification"
+            android:entryValues="@array/returnValueNotification"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/AdvancedGroupTitle"
+        android:key="@string/advancedgroup_key" >
+        <ListPreference
+            android:key="@string/ffwdsecs_key"
+            android:title="@string/FfwdTitle"
+            android:summary="@string/FfwdSummary"
+            android:entries="@array/displayWordSeconds"
+            android:entryValues="@array/returnValueSeconds"
+            android:defaultValue="30000" />
+        <ListPreference
+            android:key="@string/rewsecs_key"
+            android:title="@string/RewTitle"
+            android:summary="@string/RewSummary"
+            android:entries="@array/displayWordSeconds"
+            android:entryValues="@array/returnValueSeconds"
+            android:defaultValue="30000" />
+        <CheckBoxPreference
+            android:summary="@string/TweaksSummary"
+            android:title="@string/TweaksTitle"
+            android:key="@string/tweaks_key"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

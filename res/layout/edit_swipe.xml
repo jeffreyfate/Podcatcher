@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<CheckedTextView
+	    android:id="@+id/SwipeCheck"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="12dip"
+	    android:layout_centerInParent="true"
+	    android:gravity="center"
+	    android:checked="false"
+	    android:text="@string/enable_swipe_remote"
+	    android:checkMark="@drawable/btn_check_holo_dark" />
+	<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/SwipeCheck"
+        android:layout_margin="20dip"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/SwipeSummary"
+        android:gravity="center" />
+	<Button
+        android:id="@+id/SwipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doneButton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SwipeCheck" />
+</RelativeLayout>
